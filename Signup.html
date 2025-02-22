@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/png" href="cafe (1).png">
+    <style>
+
+body {
+            background-color: #f8f5f1; 
+            font-family: Arial, sans-serif;
+        }
+
+    .form-container {
+    background-color: #c78c4d; 
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 3px solid #8b5e3b !important; 
+}
+        h3 {
+            text-align: center;
+        }
+
+        .navbar {
+    background-color: #3e2723;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #d7ccc8;
+}
+footer {
+            background-color: #8b5e3b;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index 2.html">
+                <img src="cafe (1).png" alt="Logo" style="width:40px; margin-left: 50px;" class="rounded-pill">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index 2.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Menu.html">Our Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Signup.html">Sign In</a>
+                    </li>
+        
+                    <li class="nav-item dropdown d-sm-none">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container mt-5 mb-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form class="border rounded-5 shadow p-3 form-container">
+                    <h3>Sign Up Form</h3>
+                    <div class="row my-3">
+                        <div class="col-md-6">
+                            <input class="form-control" type="text" name="fname" placeholder="First Name">
+                        </div>
+                        <div class="col-md-6">
+                            <input class="form-control" type="text" name="lname" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <label class="form-label" for="email">Enter email address</label>
+                    <input class="form-control" type="email" name="email" value="" id="email">
+                    <input class="form-control my-3" type="password" name="psw" value="" placeholder="Password">
+                    <div class="row">
+                        <label class="form-label">Date of Birth</label>
+                        <div class="col-md-4">
+                            <select class="form-select">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <select class="form-select">
+                                <option value="1">Jan</option>
+                                <option value="2">Feb</option>
+                                <option value="3">March</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <select class="form-select">
+                                <option value="90">1990</option>
+                                <option value="91">1991</option>
+                                <option value="92">1992</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <label class="form-label">Gender</label>
+                        <div class="col-md-4">
+                            <input class="form-check-input" type="radio" name="gender">
+                            <label class="form-check-label">Male</label>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-check-input" type="radio" name="gender">
+                            <label class="form-check-label">Female</label>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-check-input" type="radio" name="gender">
+                            <label class="form-check-label">Other</label>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center mt-3">
+                        <button type="submit" class="btn" style="background-color: #8b5e3b; color: white;">Submit</button>
+                    </div>
+                    <p class="text-center mt-2">
+                        Already have an account? <a href="Signin.html" style="color: #8b5e3b; font-weight: bold;">Click here</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Cafe. All Rights Reserved.</p>
+            <p>
+                <a href="index 2.html" class="text-white">Home</a> | 
+                <a href="Menu.html" class="text-white">Our Menu</a> | 
+                <a href="Aboutus.html" class="text-white">About Us</a> | 
+                <a href="Signin.html" class="text-white">Sign In</a>
+            </p>
+        </div>
+    </footer>
+    
+
+</body>
+</html>
